@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Tailwind CSS</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+<body>
+    <div class="container mx-auto p-5 min-w-min">
+        
+        <!-- Navbar Section -->
+        <div class="md:flex md:flex-row md:justify-between text-center">
+            <div class="flex flex-row justify-center pb-5 md:pb-0">
+                <div class="bg-gradient-to-r from-purple-400 to-red-400 w-10 h-10 rounded-lg"></div>
+                <h1 class="text-3xl text-gray-600 ml-2">Logo</h1>
+            </div>
+            <div>
+                <a class="text-gray-600 hover:text-black p-4 active hover:border-gray-700 hover:border-b-2" href="#">Home</a>
+                <a class="text-gray-600 hover:text-black p-4" href="#">Shop</a>
+                <a class="text-gray-600 hover:text-black p-4" href="#">Blog</a>
+                <a class="text-gray-600 hover:text-black p-4" href="#">Contact</a>
+                <a class="bg-purple-600 text-gray-50 hover:bg-purple-700 p-3 px-5 rounded-full shadow-lg" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>    
+                    Cart (0)
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="md:flex md:flex-row py-5">
+            <div class="md:w-2/5 flex flex-col justify-center text-center md:text-left my-20">
+                <h2 class="font-sans text-5xl text-grey-600 mb-4">Some Catchy Title Here</h2>
+                <p class="uppercase text-gray-600 tracking-wide">Our brand tagline goes here.</p>
+                <p class="uppercase text-gray-600 tracking-wide">Our brand motto goes here.</p>
+                <a href="#" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-gray-50 rounded-full py-4 px-8 uppercase text-xl self-start my-5 shadow-lg">
+                    Shop Now
+                </a>
+            </div>
+            <div class="md:w-3/5">
+                <img class="mx-auto" width="400px" src="https://www.freepnglogos.com/uploads/advertising-png/digital-marketing-megaphone-advertising-5.png" alt="">
+            </div>
+        </div>
+
+        <!-- Card Men's Section -->
+        <div class="my-10">
+            <div class="flex flex-row justify-between">
+                <h2 class="text-3xl">Men's Collection</h2>
+                <a class="flex flex-row text-xl hover:text-purple-600" href="#">
+                    View All
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+            </div>
+            <div class="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-5 my-10">
+                
+                <div class="bg-gray-50 shadow-md rounded-b-lg">
+                    <a href="https://media.istockphoto.com/photos/asian-male-florist-owner-of-small-business-flower-shop-using-digital-picture-id1317277259?b=1&k=20&m=1317277259&s=170667a&w=0&h=K08QBPPiq5_OOZcksriP_3eHEB1z5diqY14KUad3wiU=" target="_blank">
+                        <img class="rounded-t-lg" src="https://media.istockphoto.com/photos/asian-male-florist-owner-of-small-business-flower-shop-using-digital-picture-id1317277259?b=1&k=20&m=1317277259&s=170667a&w=0&h=K08QBPPiq5_OOZcksriP_3eHEB1z5diqY14KUad3wiU=">
+                    </a>
+                    <div class="p-5">
+                        <h3><a href="">T-Shirt</a></h3>
+                        <div class="flex flex-row my-3">
+                            <a class="bg-yellow-400 h-5 w-5 rounded-full hover:shadow-lg mr-2" href="#"></a>
+                            <a class="bg-blue-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-white h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-red-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-green-700 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                        </div>
+                        <div class="flex flex-row my-3">
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">M</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">L</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XL</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XXL</a>
+                        </div>
+                        <div class="flex xl:flex-row flex-col justify-between text-center">
+                            <a href="#" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-gray-50 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Add to Cart
+                            </a>
+                            <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 shadow-md rounded-b-lg">
+                    <a href="https://media.istockphoto.com/photos/put-more-in-get-more-out-picture-id1291318636?b=1&k=20&m=1291318636&s=170667a&w=0&h=UvVIk7wwkN3X9OFm8gBlWWviV5vAjfrq2ejYP30JmnA=" target="_blank">
+                        <img class="rounded-t-lg" src="https://media.istockphoto.com/photos/put-more-in-get-more-out-picture-id1291318636?b=1&k=20&m=1291318636&s=170667a&w=0&h=UvVIk7wwkN3X9OFm8gBlWWviV5vAjfrq2ejYP30JmnA=">
+                    </a>
+                    <div class="p-5">
+                        <h3><a href="">Glasses</a></h3>
+                        <div class="flex flex-row my-3">
+                            <a class="bg-yellow-400 h-5 w-5 rounded-full hover:shadow-lg mr-2" href="#"></a>
+                            <a class="bg-blue-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-black h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-red-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-green-700 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                        </div>
+                        <div class="flex flex-row my-3">
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">M</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">L</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XL</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XXL</a>
+                        </div>
+                        <div class="flex xl:flex-row flex-col justify-between text-center">
+                            <a href="#" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-gray-50 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Add to Cart
+                            </a>
+                            <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 shadow-md rounded-b-lg">
+                    <a href="https://media.istockphoto.com/photos/shot-of-a-man-tying-his-laces-before-running-picture-id1332633741?b=1&k=20&m=1332633741&s=170667a&w=0&h=hSSnL9HbAZPPRDjczdT-MNSPvVe6NfYFRhq0kIZTTBg=" target="_blank">
+                        <img class="rounded-t-lg" src="https://media.istockphoto.com/photos/shot-of-a-man-tying-his-laces-before-running-picture-id1332633741?b=1&k=20&m=1332633741&s=170667a&w=0&h=hSSnL9HbAZPPRDjczdT-MNSPvVe6NfYFRhq0kIZTTBg=">
+                    </a>
+                    <div class="p-5">
+                        <h3><a href="">Shoes</a></h3>
+                        <div class="flex flex-row my-3">
+                            <a class="bg-yellow-400 h-5 w-5 rounded-full hover:shadow-lg mr-2" href="#"></a>
+                            <a class="bg-blue-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-black h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-red-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-green-700 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                        </div>
+                        <div class="flex flex-row my-3">
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">M</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">L</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XL</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XXL</a>
+                        </div>
+                        <div class="flex xl:flex-row flex-col justify-between text-center">
+                            <a href="#" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-gray-50 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Add to Cart
+                            </a>
+                            <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 shadow-md rounded-b-lg">
+                    <a href="https://media.istockphoto.com/photos/smiling-mixed-race-mature-man-on-grey-background-picture-id1319763895?b=1&k=20&m=1319763895&s=170667a&w=0&h=jhqKyg62cQVZ-NjDQjpcenCdHDrprkN4caRjk4K76E8=" target="_blank">
+                        <img class="rounded-t-lg" src="https://media.istockphoto.com/photos/smiling-mixed-race-mature-man-on-grey-background-picture-id1319763895?b=1&k=20&m=1319763895&s=170667a&w=0&h=jhqKyg62cQVZ-NjDQjpcenCdHDrprkN4caRjk4K76E8=">
+                    </a>
+                    <div class="p-5">
+                        <h3><a href="">Shirt</a></h3>
+                        <div class="flex flex-row my-3">
+                            <a class="bg-yellow-400 h-5 w-5 rounded-full hover:shadow-lg mr-2" href="#"></a>
+                            <a class="bg-blue-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-black h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-red-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-green-700 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                        </div>
+                        <div class="flex flex-row my-3">
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">M</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">L</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XL</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XXL</a>
+                        </div>
+                        <div class="flex xl:flex-row flex-col justify-between text-center">
+                            <a href="#" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-gray-50 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Add to Cart
+                            </a>
+                            <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card Women's Section -->
+            <div class="flex flex-row justify-between">
+                <h2 class="text-3xl">Women's Collection</h2>
+                <a class="flex flex-row text-xl hover:text-purple-600" href="#">
+                    View All
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-5 my-10">
+
+                <div class="bg-gray-50 shadow-md rounded-b-lg">
+                    <a href="https://media.istockphoto.com/photos/beautiful-muslim-woman-in-white-hijab-sitting-on-the-back-seat-of-a-picture-id1326212189?b=1&k=20&m=1326212189&s=170667a&w=0&h=ev8g6Qgz_Ce5_Qtj-e074fLdwSTuEOPjdgoHPP3K1MM=" target="_blank">
+                        <img class="rounded-t-lg" src="https://media.istockphoto.com/photos/beautiful-muslim-woman-in-white-hijab-sitting-on-the-back-seat-of-a-picture-id1326212189?b=1&k=20&m=1326212189&s=170667a&w=0&h=ev8g6Qgz_Ce5_Qtj-e074fLdwSTuEOPjdgoHPP3K1MM=">
+                    </a>
+                    <div class="p-5">
+                        <h3><a href="">Veil</a></h3>
+                        <div class="flex flex-row my-3">
+                            <a class="bg-yellow-400 h-5 w-5 rounded-full hover:shadow-lg mr-2" href="#"></a>
+                            <a class="bg-blue-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-black h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-red-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-green-700 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                        </div>
+                        <div class="flex flex-row my-3">
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">M</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">L</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XL</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XXL</a>
+                        </div>
+                        <div class="flex xl:flex-row flex-col justify-between text-center">
+                            <a href="#" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-gray-50 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Add to Cart
+                            </a>
+                            <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 shadow-md rounded-b-lg">
+                    <a href="https://media.istockphoto.com/photos/photo-of-positive-cheerful-girl-use-cellphone-read-social-network-picture-id1280742850?b=1&k=20&m=1280742850&s=170667a&w=0&h=tUzmhOQcQhNJs48n03dVwtf2_ZeL67uhAjoZqOhTR-0=" target="_blank">
+                        <img class="rounded-t-lg" src="https://media.istockphoto.com/photos/photo-of-positive-cheerful-girl-use-cellphone-read-social-network-picture-id1280742850?b=1&k=20&m=1280742850&s=170667a&w=0&h=tUzmhOQcQhNJs48n03dVwtf2_ZeL67uhAjoZqOhTR-0=">
+                    </a>
+                    <div class="p-5">
+                        <h3><a href="">Shirt</a></h3>
+                        <div class="flex flex-row my-3">
+                            <a class="bg-yellow-400 h-5 w-5 rounded-full hover:shadow-lg mr-2" href="#"></a>
+                            <a class="bg-blue-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-black h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-red-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-green-700 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                        </div>
+                        <div class="flex flex-row my-3">
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">M</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">L</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XL</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XXL</a>
+                        </div>
+                        <div class="flex xl:flex-row flex-col justify-between text-center">
+                            <a href="#" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-gray-50 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Add to Cart
+                            </a>
+                            <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bg-gray-50 shadow-md rounded-b-lg">
+                    <a href="https://media.istockphoto.com/photos/portrait-of-young-female-architect-picture-id481292763?b=1&k=20&m=481292763&s=170667a&w=0&h=byTGzNIP6TlPLBQzzD3h0iy-hy3A0Me3fej2PpLqqw4=" target="_blank">
+                        <img class="rounded-t-lg" src="https://media.istockphoto.com/photos/portrait-of-young-female-architect-picture-id481292763?b=1&k=20&m=481292763&s=170667a&w=0&h=byTGzNIP6TlPLBQzzD3h0iy-hy3A0Me3fej2PpLqqw4=">
+                    </a>
+                    <div class="p-5">
+                        <h3><a href="">T-Shirt</a></h3>
+                        <div class="flex flex-row my-3">
+                            <a class="bg-yellow-400 h-5 w-5 rounded-full hover:shadow-lg mr-2" href="#"></a>
+                            <a class="bg-blue-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-black h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-red-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-green-700 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                        </div>
+                        <div class="flex flex-row my-3">
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">M</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">L</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XL</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XXL</a>
+                        </div>
+                        <div class="flex xl:flex-row flex-col justify-between text-center">
+                            <a href="#" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-gray-50 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Add to Cart
+                            </a>
+                            <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bg-gray-50 shadow-md rounded-b-lg">
+                    <a href="https://media.istockphoto.com/photos/beautiful-girl-wearing-pink-bright-hoodie-isolated-on-pink-background-picture-id1270108069?b=1&k=20&m=1270108069&s=170667a&w=0&h=l2vzamXtz8FOWOjMiBuGQWA9lyunBJ56BwIuiVqR3C8=" target="_blank">
+                        <img class="rounded-t-lg" src="https://media.istockphoto.com/photos/beautiful-girl-wearing-pink-bright-hoodie-isolated-on-pink-background-picture-id1270108069?b=1&k=20&m=1270108069&s=170667a&w=0&h=l2vzamXtz8FOWOjMiBuGQWA9lyunBJ56BwIuiVqR3C8=">
+                    </a>
+                    <div class="p-5">
+                        <h3><a href="">Polo Shirt</a></h3>
+                        <div class="flex flex-row my-3">
+                            <a class="bg-yellow-400 h-5 w-5 rounded-full hover:shadow-lg mr-2" href="#"></a>
+                            <a class="bg-blue-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-black h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-red-800 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                            <a class="bg-green-700 h-5 w-5 rounded-full shadow-lg mr-2" href="#"></a>
+                        </div>
+                        <div class="flex flex-row my-3">
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">M</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">L</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XL</a>
+                            <a class="border-2 border-gray-300 text-gray-400 hover:bg-black hover:text-white rounded-md text-xs px-2 py-1 mr-2" href="#">XXL</a>
+                        </div>
+                        <div class="flex xl:flex-row flex-col justify-between text-center">
+                            <a href="#" class="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-gray-50 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Add to Cart
+                            </a>
+                            <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 rounded-full py-3 px-3 text-sm my-1 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                </svg>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="rounded-lg shadow-lg my-20 flex flex-row">
+                <div class="lg:w-3/5 w-full bg-gradient-to-r from-black to-purple-900 lg:from-black lg:via-purple-900 lg:to-transparent rounded-lg text-gray-100 p-12">
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-extrabold mb-4">Subscribe to get our offer first</h3>
+                        <p class="mb-4 leading-relaxed">Want to hear from us when we have new offer? Sign up for our newsletter and we'll email you every time we have new sale offers.</p>
+                        <div>
+                            <input class="bg-gray-600 text-gray-200 placeholder-gray-400 px-4 py-3 w-full rounded-lg focus:outline-none mb-4" type="email" placeholder="Enter email address">
+                            <button type="submit" class="bg-red-600 py-3 rounded-lg w-full">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/5 w-full lg:flex lg:flex-row hidden">
+                    <img class="h-96" src="https://www.pngall.com/wp-content/uploads/2018/04/Businessman-Transparent.png">
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center py-5 text-sm">
+                <div class="mb-4">
+                    <a class="hover:text-purple-600" href="">About</a>
+                    <a class="hover:text-purple-600" href="">Privacy Policy</a>
+                    <a class="hover:text-purple-600" href="">Terms of Services</a>
+                </div>
+                <p>&copy; Copyright Reserved 2021</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
